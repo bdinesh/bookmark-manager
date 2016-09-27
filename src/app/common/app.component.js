@@ -1,0 +1,19 @@
+var app = {
+    templateUrl: './app.html',
+    controller: 'AppController'
+};
+
+angular
+    .module('cc')
+    .component('app', app)
+    .config(function ($stateProvider) {
+        $stateProvider
+            .state('app', {
+                redirectTo: 'app.home',
+                url: '/app',
+                data: {
+                    requiredAuth: true
+                },
+                component: 'app'
+            });
+    });
