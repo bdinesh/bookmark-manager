@@ -1,0 +1,32 @@
+{
+  "bookmarks": [
+    {
+      "title": "Google",
+      "url": "www.google.com",
+      "notes": "",
+      "tags": [
+        "search"
+      ],
+      "favourite": true
+    },
+    {
+      "title": "gmail",
+      "url": "www.gmail.com",
+      "notes": "My email app",
+      "tags": [
+        "email",
+        "communication"
+      ],
+      "favourite": true
+    },
+    {
+      "title": "Facebook",
+      "url": "www.facebook.com",
+      "notes": "",
+      "tags": [
+        "social networking"
+      ],
+      "favourite": false
+    }
+  ]
+}
