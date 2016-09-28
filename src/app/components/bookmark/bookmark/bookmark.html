@@ -1,0 +1,19 @@
+<md-card>
+    <md-card-header>
+        {{$ctrl.title}}
+    </md-card-header>
+    <md-card-content>
+        {{$ctrl.notes}}
+    </md-card-content>
+    <md-card-actions layout="row" layout-align="end center">
+        <md-button>Edit</md-button>
+        <md-button>Delete</md-button>
+    </md-card-actions>
+
+    <md-card-footer layout="row">
+        <div ng-repeat="tag in $ctrl.tags">
+            <tag tag="tag" on-click="">
+            </tag>
+        </div>
+    </md-card-footer>
+</md-card>
