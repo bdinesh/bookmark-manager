@@ -1,9 +1,10 @@
-function BookmarkService($resource) {
+function BookmarkService($http) {
     let self = this;
 
     self.getBookmarks = function () {
-        const Bookmarks = $resource('data/bookmarks.json');
-        let bookmarks = Bookmarks.get();
+        return $http
+            .get('data/bookmarks.json')
+            .then(response => response.data);
     };
 }
 
