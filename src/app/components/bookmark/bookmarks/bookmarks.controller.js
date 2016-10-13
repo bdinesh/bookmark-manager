@@ -19,5 +19,5 @@ function BookmarksController($state) {
 }
 
 angular
-    .module('components.bookmarks')
+    .module('components.bookmark')
     .controller('BookmarksController', BookmarksController);
