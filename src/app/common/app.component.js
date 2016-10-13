@@ -4,7 +4,7 @@ var app = {
 };
 
 angular
-    .module('cc')
+    .module('common')
     .component('app', app)
     .config(function ($stateProvider) {
         $stateProvider
