@@ -1,6 +1,10 @@
 function BookmarkController() {
-    let ctrl = this;
-    
+    let self = this;
+    let bookmark = self.bookmark;
+
+    self.delete = () => {
+        self.onDelete(bookmark);
+    };
 }
 
 angular
