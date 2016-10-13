@@ -8,6 +8,7 @@ angular
     .config(function ($stateProvider) {
         $stateProvider
             .state('app.home', {
-                url: '/home'
+                url: '/home',
+                component: 'home'
             });
     });
