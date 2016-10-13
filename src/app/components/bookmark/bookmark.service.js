@@ -1,9 +1,9 @@
-function BookmarkService($http) {
+function BookmarkService($http, $resource) {
     let self = this;
 
     self.getBookmarks = function () {
         return $http
-            .get('data/bookmarks.json')
+            .get('../data/bookmarks.json')
             .then(response => response.data);
     };
 }
