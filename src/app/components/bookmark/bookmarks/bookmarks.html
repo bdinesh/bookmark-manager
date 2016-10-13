@@ -1,0 +1,7 @@
+<div>
+    <ul>
+        <li ng-repeat="bookmark in $ctrl.bookmarks">
+            <bookmark bookmark="bookmark" on-select="$ctrl.goToBookmark($event)"></bookmark>
+        </li>
+    </ul>
+</div>
