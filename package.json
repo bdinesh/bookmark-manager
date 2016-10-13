@@ -56,7 +56,7 @@
     "angular-material-data-table": "^0.10.9",
     "angular-messages": "1.5.8",
     "angular-resource": "1.5.8",
-    "angular-ui-router": "1.0.0-beta.1",
+    "angular-ui-router": "^1.0.0-beta.3",
     "babel-polyfill": "^6.13.0",
     "ngstorage": "^0.3.11",
     "oidc-client": "^1.2.0"
