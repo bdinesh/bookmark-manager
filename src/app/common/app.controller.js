@@ -9,5 +9,5 @@ function AppController(AuthService, $state) {
 }
 
 angular
-    .module('cc')
+    .module('common')
     .controller('AppController', AppController);
