@@ -9,5 +9,5 @@ const bookmark = {
 };
 
 angular
-    .module('components')
+    .module('components.bookmark')
     .component('bookmark', bookmark);
