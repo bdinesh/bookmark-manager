@@ -11,8 +11,7 @@ angular
     .component('bookmarks', bookmarks)
     .config(function ($stateProvider) {
         $stateProvider
-            .state('bookmarks', {
-                parent: 'app',
+            .state('app.bookmarks', {
                 url: '/bookmarks',
                 component: 'bookmarks',
                 resolve: {
