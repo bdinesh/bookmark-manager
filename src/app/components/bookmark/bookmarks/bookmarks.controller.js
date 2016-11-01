@@ -1,6 +1,15 @@
-function BookmarksController($state) {
+function BookmarksController($state, $log) {
     let self = this;
-    let bookmarks = self.bookmarks;
+
+    self.$onInit = () => {
+        $log.debug('Bookmarks', self.bookmarks);
+    };
+
+    // self.$onchanges = changes => {
+    //     if (changes.bookmarks) {
+    //         self.bookmarks = angular.copy(self.bookmarks);
+    //     }
+    // };
 
     self.goToBookmark = event => {
         $state.go('bookmark', {
@@ -9,12 +18,12 @@ function BookmarksController($state) {
     };
 
     self.deleteBookmark = event => {
-        let idx = bookmarks.indexOf(event.bookmark);
-        bookmarks.splice(idx, 1);
+        let idx = self.bookmarks.indexOf(event.bookmark);
+        self.bookmarks.splice(idx, 1);
     };
 
     self.addBookmark = event => {
-        bookmarks.push(event.bookmark);
+        self.bookmarks.push(event.bookmark);
     };
 }
 

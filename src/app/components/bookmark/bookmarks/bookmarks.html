@@ -1,8 +1,10 @@
-<div>
+<div layout="column">
     <h2>Your bookmarks!</h2>
-    <ul>
-        <li ng-repeat="bookmark in $ctrl.bookmarks">
-            <bookmark bookmark="bookmark" on-select="$ctrl.goToBookmark($event);"></bookmark>
-        </li>
-    </ul>
+    <div layout="row">
+        <bookmark ng-repeat="bookmark in $ctrl.bookmarks"
+                  bookmark="bookmark"
+                  on-select="$ctrl.goToBookmark($event);">
+        </bookmark>
+    </div>
 </div>
+
