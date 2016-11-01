@@ -1,9 +1,9 @@
 <md-card>
     <md-card-header>
-        {{$ctrl.title}}
+        {{$ctrl.bookmark.title}}
     </md-card-header>
     <md-card-content>
-        {{$ctrl.notes}}
+        {{$ctrl.bookmark.notes}}
     </md-card-content>
     <md-card-actions layout="row" layout-align="end center">
         <md-button>Edit</md-button>
@@ -11,7 +11,7 @@
     </md-card-actions>
 
     <md-card-footer layout="row">
-        <div ng-repeat="tag in $ctrl.tags">
+        <div ng-repeat="tag in $ctrl.bookmark.tags">
             <tag tag="tag" on-click="">
             </tag>
         </div>

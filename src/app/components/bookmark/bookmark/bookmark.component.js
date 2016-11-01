@@ -4,7 +4,7 @@ const bookmark = {
         onSelect: '&',
         onDelete: '&'
     },
-    templateUrl: 'bookmark.html',
+    templateUrl: './bookmark.html',
     controller: 'BookmarkController'
 };
 
