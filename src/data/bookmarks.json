@@ -1,12 +1,14 @@
 {
-  "bookmarks": [
+  "items": [
     {
       "id": 1,
       "title": "Google",
       "url": "www.google.com",
       "notes": "",
       "tags": [
-        "search"
+        {
+          "title": "search"
+        }
       ],
       "favourite": true
     },
@@ -16,8 +18,12 @@
       "url": "www.gmail.com",
       "notes": "My email app",
       "tags": [
-        "email",
-        "communication"
+        {
+          "title": "email"
+        },
+        {
+          "title": "communication"
+        }
       ],
       "favourite": true
     },
@@ -27,7 +33,9 @@
       "url": "www.facebook.com",
       "notes": "",
       "tags": [
-        "social networking"
+        {
+          "title": "social networking"
+        }
       ],
       "favourite": false
     }
