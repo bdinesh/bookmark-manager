@@ -1,2 +1,5 @@
 angular
-    .module('components', []);
+    .module('components', [
+        'ui.router',
+        'components.bookmark'
+    ]);
