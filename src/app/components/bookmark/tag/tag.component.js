@@ -4,7 +4,7 @@ const tag = {
         onClick: '&',
         onDelete: '&'
     },
-    templateUrl: 'tag.html',
+    templateUrl: './tag.html',
     controller: 'TagController'
 };
 

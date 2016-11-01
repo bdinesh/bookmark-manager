@@ -1,10 +1,13 @@
-function TagController() {
-    let ctrl = this;
+function TagController($log) {
+    let self = this;
 
-    ctrl.clickTag = function () {
-        ctrl.onClick({
+    self.$onInit = function () {
+        $log.debug('Tag', self.tag);
+    };
+    self.clickTag = function () {
+        self.onClick({
             $event: {
-                tagId: ctrl.tag.id
+                tagId: self.tag.id
             }
         });
     };
