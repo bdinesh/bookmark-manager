@@ -12,6 +12,7 @@ const templateCache = require('gulp-angular-templatecache');
 const htmlmin = require('gulp-htmlmin');
 const gulpif = require('gulp-if');
 const babel = require('gulp-babel');
+const ngAnnotate = require('gulp-ng-annotate');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
@@ -130,7 +131,7 @@ gulp.task('scripts', ['vendorScripts'], () => {
         .pipe(wrap('(function(angular){\n\'use strict\';\n<%= contents %>})(window.angular);'))
         .pipe(babel())
         .pipe(concat('bundle.js'))
-        //.pipe(ngAnnotate())
+        .pipe(ngAnnotate())
         .pipe(gulpif(argv.deploy, uglify()))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(config.paths.dist + 'js/'));
