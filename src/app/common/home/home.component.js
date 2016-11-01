@@ -3,7 +3,7 @@ const home = {
 };
 
 angular
-    .module('components')
+    .module('common')
     .component('home', home)
     .config(function ($stateProvider) {
         $stateProvider
